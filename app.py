@@ -131,9 +131,9 @@
 
 # for i in range(1, 5):
 #     print(i)
-# range(5):generates 0,1,2,3,4
-# range(1,5):generates 1,2,3,4
-# range(1,5,2):generates 1,3. 2 is a step.
+# range(5):      generates 0,1,2,3,4
+# range(1,5):    generates 1,2,3,4
+# range(1,5,2):  generates 1,3. 2 is a step.
 
 #           Nested loops
 
@@ -158,6 +158,18 @@
 #     if number > max:
 #         max = number
 # print(max)
+
+# list functions
+
+# numbers.append(6)       add 6 to the end
+# numbers.insert(0, 6)    add 6 at index 0
+# numbers.remove(6)       remove 6
+# numbers.pop()           remove the last item of the list
+# numbers.clear()         clear the list
+# numbers.index(8)        return index of first occurrence of number 8
+# numbers.sort()          sort the list in ascending order
+# numbers.reverse()       reverse the order of the list
+# numbers.copy()          make copy of the list
 
 #       2D lists: list inside of a list
 
@@ -186,13 +198,23 @@
 # print(uniques)
 
 #        Tuples (1, 2, 3) they are immutable. Can't add or remove items form tuples.
+#
+# coordinates = (1, 2, 3)  # tuple
+# # x = coordinates[0]
+# # y = coordinates[1]
+# # z = coordinates[2]
+#
+# x, y, z = coordinates  # tuple unpacking. does the same as the 3 lines above. you can also unpack lists.
+#
+# print(y)
 
-coordinates = (1, 2, 3)  # tuple
-# x = coordinates[0]
-# y = coordinates[1]
-# z = coordinates[2]
+#        Dictionaries store key - value pairs
 
-x, y, z = coordinates  # tuple unpacking. does the same as the 3 lines above. you can also unpack lists.
-
-print(y)
-
+customer = {
+    "name": "John",
+    "age": 30,
+    "email": "john@gmail.com"
+}
+print(customer["age"])  # accessing age value
+# assigning a non existing key(birthdate) with a default value(Aug 1990)
+print(customer.get("birthdate", "Aug 1990"))

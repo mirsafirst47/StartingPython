@@ -210,11 +210,28 @@
 
 #        Dictionaries store key - value pairs
 
-customer = {
-    "name": "John",
-    "age": 30,
-    "email": "john@gmail.com"
+# customer = {
+#     "name": "John",
+#     "age": 30,
+#     "email": "john@gmail.com"
+# }
+# print(customer["age"])  # accessing age value
+# # assigning a non existing key(birthdate) with a default value(Aug 1990)
+# print(customer.get("birthdate", "Aug 1990"))
+
+# phone number program
+
+phone = input("phone: ")
+
+digit_mappimg = {
+    "1": "One",
+    "2": "Two",
+    "3": "Three",
+    "4": "Four"
 }
-print(customer["age"])  # accessing age value
-# assigning a non existing key(birthdate) with a default value(Aug 1990)
-print(customer.get("birthdate", "Aug 1990"))
+
+output = ""
+
+for ch in phone:
+    output += digit_mappimg.get(ch, "@") + " "
+print(output)

@@ -221,17 +221,28 @@
 
 # phone number program
 
-phone = input("phone: ")
+# phone = input("phone: ")
+#
+# digit_mapping = {
+#     "1": "One",
+#     "2": "Two",
+#     "3": "Three",
+#     "4": "Four"
+# }
+#
+# output = ""
+#
+# for ch in phone:
+#     output += digit_mapping.get(ch, "@") + " "
+# print(output)
 
-digit_mappimg = {
-    "1": "One",
-    "2": "Two",
-    "3": "Three",
-    "4": "Four"
-}
+# Functions
 
-output = ""
+def greet_user(name):  # name is a parameter
+    print(f"Hi {name}!")
+    print("Welcome aboard.")
 
-for ch in phone:
-    output += digit_mappimg.get(ch, "@") + " "
-print(output)
+
+greet_user("Samir")  # samir is a positional argument
+
+

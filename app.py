@@ -238,17 +238,36 @@
 
 # Functions
 
-def greet_user(name):  # name is a parameter
-    print(f"Hi {name}!")
-    print("Welcome aboard.")
+# def greet_user(name):  # name is a parameter
+#     print(f"Hi {name}!")
+#     print("Welcome aboard.")
+#
+#
+# greet_user("Samir")  # samir is a positional argument
+#
+#
+# def square_number(number):
+#     return number * number
+#
+#
+# print(square_number(3))
+
+#  reusable functions - emoji converter
+
+def emoji_converter(message):
+    words = message.split(" ")
+    emojis = {
+        ":)": "ð",
+        ":(": "ð"
+    }
+    output = ""
+    for word in words:
+        output += emojis.get(word, word) + " "
+    return output
 
 
-greet_user("Samir")  # samir is a positional argument
+message = input(">")
+print(emoji_converter(message))
 
-def square_number(number):
-    return number * number
-
-
-print(square_number(3))
 
 

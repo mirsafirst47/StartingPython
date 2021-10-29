@@ -254,20 +254,35 @@
 
 #  reusable functions - emoji converter
 
-def emoji_converter(message):
-    words = message.split(" ")
-    emojis = {
-        ":)": "ð",
-        ":(": "ð"
-    }
-    output = ""
-    for word in words:
-        output += emojis.get(word, word) + " "
-    return output
+# def emoji_converter(message):
+#     words = message.split(" ")
+#     emojis = {
+#         ":)": "ð",
+#         ":(": "ð"
+#     }
+#     output = ""
+#     for word in words:
+#         output += emojis.get(word, word) + " "
+#     return output
+#
+#
+# message = input(">")
+# print(emoji_converter(message))
+
+#  How to handle errors ( try - except)
+
+try:
+    age = int(input("Age: "))
+    income = 75000
+    risks = income // age
+    print(age)
+    print(risks)
+except ZeroDivisionError:
+    print("Age cannot be 0.")
+except ValueError:
+    print("Invalid value")
 
 
-message = input(">")
-print(emoji_converter(message))
 
 
 

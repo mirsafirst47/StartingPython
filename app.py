@@ -245,4 +245,10 @@ def greet_user(name):  # name is a parameter
 
 greet_user("Samir")  # samir is a positional argument
 
+def square_number(number):
+    return number * number
+
+
+print(square_number(3))
+
 

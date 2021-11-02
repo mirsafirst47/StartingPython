@@ -271,16 +271,34 @@
 
 #  How to handle errors ( try - except)
 
-try:
-    age = int(input("Age: "))
-    income = 75000
-    risks = income // age
-    print(age)
-    print(risks)
-except ZeroDivisionError:
-    print("Age cannot be 0.")
-except ValueError:
-    print("Invalid value")
+# try:
+#     age = int(input("Age: "))
+#     income = 75000
+#     risks = income // age
+#     print(age)
+#     print(risks)
+# except ZeroDivisionError:
+#     print("Age cannot be 0.")
+# except ValueError:
+#     print("Invalid value")
+
+#       CLasses
+
+class Point:
+    def __init__(self, x, y):  # constructor method
+        self.x = x
+        self.y = y
+
+    def move(self):
+        print("move")
+
+    def draw(self):
+        print("draw")
+
+
+point = Point(10, 14)
+print(point.y)
+
 
 
 

@@ -299,6 +299,17 @@ class Point:
 point = Point(10, 14)
 print(point.y)
 
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+    def talk(self):
+        print("I can talk")
+
+
+person = Person("Mike")
+print(person.name)
+
 
 
 
